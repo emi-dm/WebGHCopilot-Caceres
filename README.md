@@ -1,5 +1,7 @@
 # GitHub Copilot Developer Days — Terminal Edition
 
+![Logo de GitHub Copilot Developer Days](./logo.jpg)
+
 Bienvenido a **GitHub Copilot Developer Days — Terminal Edition**, un evento presencial diseñado para ayudar a desarrolladores de todos los niveles a descubrir, aprender y construir con GitHub Copilot.
 
 Este evento se inspira en las interfaces de línea de comandos clásicas y en la estética retro de terminal, creando un ambiente divertido y enfocado para explorar el desarrollo asistido por IA.

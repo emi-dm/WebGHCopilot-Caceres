@@ -52,4 +52,52 @@ document.addEventListener('DOMContentLoaded', function() {
 
     setInterval(showRandomPhrase, 4500);
   }
+
+  // Home image lightbox (expand on click)
+  const homeEventImage = document.getElementById('home-event-image');
+  if (homeEventImage) {
+    let lightbox = null;
+
+    const closeLightbox = function() {
+      if (!lightbox) {
+        return;
+      }
+
+      lightbox.remove();
+      lightbox = null;
+      document.body.classList.remove('lightbox-open');
+    };
+
+    const openLightbox = function() {
+      if (lightbox) {
+        return;
+      }
+
+      lightbox = document.createElement('div');
+      lightbox.className = 'image-lightbox';
+
+      const expandedImage = document.createElement('img');
+      expandedImage.src = homeEventImage.src;
+      expandedImage.alt = homeEventImage.alt;
+
+      lightbox.appendChild(expandedImage);
+
+      lightbox.addEventListener('click', function(event) {
+        if (event.target === lightbox) {
+          closeLightbox();
+        }
+      });
+
+      document.body.appendChild(lightbox);
+      document.body.classList.add('lightbox-open');
+    };
+
+    homeEventImage.addEventListener('click', openLightbox);
+
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        closeLightbox();
+      }
+    });
+  }
 });

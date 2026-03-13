@@ -55,6 +55,44 @@ header {
   gap: 12px;
 }
 
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.event-image {
+  display: block;
+  width: min(320px, 80%);
+  margin: 0 auto 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  box-shadow: 0 0 22px var(--shadow-color);
+  cursor: zoom-in;
+}
+
+.image-lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 8, 15, 0.9);
+  display: grid;
+  place-items: center;
+  z-index: 9999;
+  padding: 24px;
+}
+
+.image-lightbox img {
+  max-width: min(1100px, 92vw);
+  max-height: 86vh;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 0 30px var(--shadow-color);
+}
+
+.lightbox-open {
+  overflow: hidden;
+}
+
 .header-title {
   color: var(--secondary-color);
   letter-spacing: 1.8px;
