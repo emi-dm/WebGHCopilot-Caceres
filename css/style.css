@@ -1,0 +1,351 @@
+/* Terminal UI - Modern Retro */
+
+:root {
+  --bg-color: #070a10;
+  --bg-elev: #0d1320;
+  --panel: rgba(13, 19, 32, 0.75);
+  --text-color: #b8ffd9;
+  --muted-text: #8ec9b0;
+  --accent-color: #37f3ff;
+  --secondary-color: #72ff5d;
+  --warn-color: #ffd35b;
+  --border-color: #1c3852;
+  --link-color: #6ee7ff;
+  --link-hover: #72ff5d;
+  --shadow-color: rgba(55, 243, 255, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Courier New", "IBM Plex Mono", monospace;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header,
+footer,
+section {
+  backdrop-filter: blur(4px);
+}
+
+header {
+  background: var(--bg-elev);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 8px 18px var(--shadow-color);
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.header-title {
+  color: var(--secondary-color);
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(114, 255, 93, 0.25);
+}
+
+.header-subtitle {
+  color: var(--accent-color);
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+nav a,
+.terminal-btn {
+  border: 1px solid var(--border-color);
+  color: var(--link-color);
+  background: var(--bg-elev);
+  padding: 6px 10px;
+  text-decoration: none;
+  font-size: 12px;
+  transition: 0.2s ease;
+}
+
+nav a:hover,
+nav a.active,
+.terminal-btn:hover {
+  background: var(--accent-color);
+  color: #041019;
+  box-shadow: 0 0 16px var(--shadow-color);
+}
+
+.terminal-btn {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+main {
+  width: min(1100px, 100%);
+  margin: 22px auto;
+  padding: 0 20px 22px;
+  display: grid;
+  gap: 18px;
+}
+
+section {
+  position: relative;
+  border: 1px solid var(--border-color);
+  background: var(--panel);
+  box-shadow: 0 8px 24px var(--shadow-color), inset 0 0 0 1px rgba(110, 231, 255, 0.06);
+  border-radius: 10px;
+  padding: 18px;
+  overflow: hidden;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.025) 0px,
+    rgba(255, 255, 255, 0.025) 1px,
+    transparent 2px,
+    transparent 4px
+  );
+}
+
+section h2 {
+  color: var(--warn-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  border-bottom: 1px dashed var(--border-color);
+  padding-bottom: 8px;
+}
+
+section h3 {
+  color: var(--accent-color);
+  margin: 12px 0 8px;
+}
+
+section p {
+  margin-bottom: 10px;
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+ul,
+ol {
+  margin-left: 22px;
+}
+
+.ascii-divider {
+  text-align: center;
+  color: var(--muted-text);
+  letter-spacing: 1px;
+  font-size: 12px;
+  margin: 12px 0;
+  animation: pulse 2.6s ease-in-out infinite;
+}
+
+.ascii-box {
+  border: 1px dashed var(--border-color);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.ascii-box-title {
+  color: var(--secondary-color);
+  margin-bottom: 6px;
+}
+
+.session {
+  border-left: 2px solid var(--accent-color);
+  padding-left: 12px;
+}
+
+.session-title {
+  color: var(--warn-color);
+  font-weight: bold;
+}
+
+.session-time,
+.session-speaker,
+.session-type {
+  color: var(--muted-text);
+  font-size: 12px;
+}
+
+footer {
+  margin-top: auto;
+  padding: 14px 18px;
+  text-align: center;
+  font-size: 11px;
+  color: var(--muted-text);
+  border-top: 1px solid var(--border-color);
+  background: var(--bg-elev);
+}
+
+/* Home hero + centered animation */
+.home-main {
+  min-height: calc(100vh - 176px);
+  display: grid;
+  place-items: center;
+}
+
+.hero-center {
+  width: min(760px, 100%);
+  text-align: center;
+}
+
+.hero-title {
+  color: var(--secondary-color);
+  font-size: clamp(20px, 4vw, 34px);
+  letter-spacing: 2px;
+  text-shadow: 0 0 14px rgba(114, 255, 93, 0.3);
+}
+
+.terminal-orb {
+  width: clamp(120px, 22vw, 190px);
+  aspect-ratio: 1;
+  margin: 0 auto 18px;
+  border: 2px solid var(--accent-color);
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 0 35px var(--shadow-color), inset 0 0 20px rgba(55, 243, 255, 0.2);
+  animation: rotate 7s linear infinite;
+}
+
+.terminal-orb::before,
+.terminal-orb::after {
+  content: "";
+  position: absolute;
+  inset: 16%;
+  border: 1px solid var(--secondary-color);
+  border-radius: 50%;
+}
+
+.terminal-orb::after {
+  inset: 32%;
+  border-color: var(--warn-color);
+}
+
+.typing-line {
+  width: fit-content;
+  max-width: 100%;
+  margin: 8px auto 0;
+  border-right: 2px solid var(--warn-color);
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(34, end) 1, blink 0.8s step-end infinite;
+}
+
+.blink-cursor::after {
+  content: "█";
+  margin-left: 3px;
+  color: var(--warn-color);
+  animation: blink 0.75s step-end infinite;
+}
+
+.home-interactive {
+  width: min(760px, 100%);
+}
+
+.command-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+.command-btn {
+  cursor: pointer;
+}
+
+.terminal-output {
+  margin-top: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 10px;
+  min-height: 56px;
+  color: var(--secondary-color);
+  background: var(--bg-elev);
+}
+
+.home-stat {
+  margin-top: 10px;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 34ch; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; opacity: 0.35; }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; text-shadow: 0 0 12px var(--shadow-color); }
+}
+
+@media (max-width: 768px) {
+  header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  nav a,
+  .terminal-btn {
+    font-size: 11px;
+    padding: 5px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+
+  main {
+    padding: 0 10px 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
