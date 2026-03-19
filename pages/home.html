@@ -22,34 +22,55 @@
     </nav>
   </header>
 
-  <main>
+  <main class="home-main">
+    <section class="hero-center">
+      <img src="../logo.jpg" alt="Imagen del evento GitHub Copilot Developer Days" class="event-image" id="home-event-image" title="Haz click para ampliar">
+      <div class="terminal-orb" aria-hidden="true"></div>
+      <h1 class="hero-title blink-cursor">GITHUB COPILOT DEV DAYS - CÁCERES</h1>
+      <p class="typing-line">&gt; inicializando entorno copilot...</p>
+      <p>Aprende GitHub Copilot con talleres prácticos, Agent Mode, Plan Mode y MCP en una experiencia real.</p>
+      <p><a href="agenda.html">[&gt;] Ver agenda</a> · <a href="info.html">[&gt;] Más info</a></p>
+    </section>
+
+    <section class="home-interactive">
+      <h2>[ TERMINAL INTERACTIVO ]</h2>
+      <p>Frases random con humor tech para calentar motores:</p>
+      <div class="terminal-output" id="home-console-output">&gt; cargando chistes del compilador...</div>
+      <p class="home-stat"><button id="random-phrase-btn" class="terminal-btn">[OTRA FRASE RANDOM]</button></p>
+    </section>
+
     <section>
-      <div style="text-align: center; margin-bottom: 30px;">
-        <h1 class="blink-cursor" style="font-size: 24px; color: var(--secondary-color); letter-spacing: 3px; margin-bottom: 10px;">
-          $ INITIALIZING SYSTEM
-        </h1>
-        <div style="color: var(--accent-color); font-size: 12px; margin-top: 15px;">
-          <div style="margin: 5px 0;">▓▓▓▓▓▓▓▓▓▓ 100%</div>
-          <div style="color: var(--text-color); margin-top: 10px;">&gt; System Ready</div>
-        </div>
+      <h2>[ AGENDA RÁPIDA ]</h2>
+      <div class="session">
+        <div class="session-title">01 — GitHub Copilot: Tu compañero de IA para cada flujo de trabajo</div>
+        <div class="session-time">⏱ Sesión · 30–45 min</div>
+        <p>Presentación general de GitHub Copilot.</p>
       </div>
-      <div class="ascii-divider">
-        &gt;&gt;&gt;---------&lt;&lt;&lt;<br>
-        : Event Terminal :<br>
-        &gt;&gt;&gt;---------&lt;&lt;&lt;
+      <div class="session" style="margin-top: 12px;">
+        <div class="session-title">02 — Sesión de la comunidad · By Emilio Delgado</div>
+        <div class="session-time">⏱ Sesión · 30–45 min</div>
+        <div class="session-type">Self-Healing Codebases: Copilot CLI + SonarQube + MCP</div>
+        <p>
+          Demo práctica de ciclo cerrado de generación, análisis y corrección asistido por IA para mantener
+          bases de código más limpias, seguras y mantenibles.
+        </p>
       </div>
-      <p class="welcome-text">
-        ¿Quieres llevar tu productividad con IA al siguiente nivel? Únete a nosotros para una tarde de 
-        talleres prácticos donde aprenderás a sacar el máximo partido a <strong>GitHub Copilot</strong> en 
-        tu IDE, lenguaje y flujo de trabajo favorito.
+      <div class="session" style="margin-top: 12px;">
+        <div class="session-title">03 — Taller práctico</div>
+        <div class="session-time">⏱ Taller · 60 min</div>
+        <p>Ejercicios prácticos y guiados usando GitHub Copilot.</p>
+      </div>
+      <p style="margin-top: 12px;">
+        <a href="agenda.html">[&gt;] Ver agenda completa</a> ·
+        <a href="https://copilot-dev-days.github.io/" target="_blank">[&gt;] Más info oficial</a>
       </p>
     </section>
 
     <section>
       <h2>[ MISSION BRIEF ]</h2>
       <p>
-        Olvídate de la teoría — aquí vas a construir <strong>proyectos reales desde cero</strong>, con 
-        GitHub Copilot como tu copiloto en cada paso. En pocas horas pasarás de explorar las 
+        Olvídate de la teoría — aquí vas a construir <strong>proyectos reales desde cero</strong>, con
+        GitHub Copilot como tu copiloto en cada paso. En pocas horas pasarás de explorar las
         funcionalidades básicas a dominar técnicas avanzadas como:
       </p>
       <ul>
@@ -63,7 +84,7 @@
     <section>
       <h2>[ COVERAGE ]</h2>
       <p>
-        Los talleres están diseñados por el equipo de GitHub Copilot y cubren los lenguajes e IDEs más 
+        Los talleres están diseñados por el equipo de GitHub Copilot y cubren los lenguajes e IDEs más
         populares:
       </p>
       <ul>
@@ -76,7 +97,7 @@
         <strong>IDEs compatibles:</strong> VS Code, IntelliJ, Visual Studio, Xcode y más.
       </p>
       <p>
-        Tanto si eres desarrollador/a individual como si formas parte de un equipo, encontrarás un 
+        Tanto si eres desarrollador/a individual como si formas parte de un equipo, encontrarás un
         camino adaptado a tu stack.
       </p>
     </section>
@@ -112,11 +133,6 @@
       </ul>
     </section>
 
-    <div class="ascii-divider" style="animation: glow-pulse 2s ease-in-out infinite;">
-      &lt;&lt;&lt;---------&gt;&gt;&gt;<br>
-      : Ready to level up? :<br>
-      &lt;&lt;&lt;---------&gt;&gt;&gt;
-    </div>
   </main>
 
   <footer>
