@@ -190,12 +190,12 @@ section h3 {
 
 section p {
   margin-bottom: 10px;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 
 a {
   color: var(--link-color);
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 
 a:hover {
@@ -235,7 +235,7 @@ ol {
 .session-title {
   color: var(--warn-color);
   font-weight: bold;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 
 .session-time,
@@ -421,7 +421,7 @@ footer {
 
   .hero-title {
     letter-spacing: 1px;
-    font-size: clamp(22px, 8vw, 28px);
+    font-size: clamp(1.375rem, 8vw, 1.75rem);
   }
 
   .terminal-orb {
