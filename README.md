@@ -12,7 +12,7 @@ Este evento se inspira en las interfaces de línea de comandos clásicas y en la
 
 **Fecha:** 17 de abril de 2026 — 17:00 a 20:00
 
-**Lugar:** Red Circular FAB (Calle Doctor Marañón 2, Cáceres)
+**Lugar:** CircularFab — Calle Doctor Marañón 2, Cáceres
 
 **Formato:** Taller y charlas presenciales (aforo: 30 personas)
 
@@ -42,7 +42,8 @@ En este evento aprenderás a:
 - Sesión de introducción a Copilot
 - Cómo sacar partido en tu IDE, lenguaje y flujo de trabajo favorito
 
-### 2) Sesión de la comunidad — Self‑Healing Codebases (Emilio Delgado) (30–45 min)
+### 2) CODE WITNESS — Self‑Healing Codebases (Emilio Delgado) (30–45 min)
+- Taller presencial sobre **aseguramiento de calidad del código generado por IA** con **SonarQube** y **MCP**
 - Copilot CLI + SonarQube + MCP: ciclo automatizado de calidad de código
 - Demo práctica: agente que detecta problemas y propone/refactoriza soluciones
 
@@ -54,7 +55,7 @@ En este evento aprenderás a:
 ---
 
 ## 🎤 Ponentes y organizadores
-- **Emilio Delgado** — Ponente de la sesión comunitaria (Self‑Healing Codebases)
+- **Emilio Delgado** — Ponente del track **CODE WITNESS** (Self‑Healing Codebases · SonarQube + MCP)
 - **Organizadores locales** — Logística, demos y facilitación del taller
 
 📣 ¿Quieres dar una charla breve o una demo relámpago? Contacta a través de los canales del evento.
@@ -76,7 +77,7 @@ En este evento aprenderás a:
 
 ## 📍 Lugar y logística
 
-- **Lugar:** Red Circular FAB (Calle Doctor Marañón 2, Cáceres)
+- **Lugar:** CircularFab — Calle Doctor Marañón 2, Cáceres
 - **Aforo:** 30 personas (presencial)
 - **Horario:** 17:00–20:00 (incluye breve pausa)
 - **Comida y bebida:** Se ofrecerán refrescos ligeros
