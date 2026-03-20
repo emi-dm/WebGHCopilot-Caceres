@@ -1,11 +1,58 @@
 /* Terminal/DOS Retro Website - Vanilla JS */
 
+const THEME_STORAGE_KEY = 'ghcdd-theme';
+
 document.addEventListener('DOMContentLoaded', function() {
+  let storedLight = false;
+  try {
+    storedLight = localStorage.getItem(THEME_STORAGE_KEY) === 'light';
+  } catch (e) {}
+  document.documentElement.classList.toggle('theme-light', storedLight);
+
+  const header = document.querySelector('header');
+  const menuToggle = document.querySelector('.header-menu-toggle');
+
+  if (header && menuToggle) {
+    const themeBtn = document.createElement('button');
+    themeBtn.type = 'button';
+    themeBtn.className = 'theme-toggle';
+
+    const metaThemeColor = (function() {
+      let el = document.querySelector('meta[name="theme-color"]');
+      if (!el) {
+        el = document.createElement('meta');
+        el.setAttribute('name', 'theme-color');
+        document.head.appendChild(el);
+      }
+      return el;
+    })();
+
+    const setTheme = function(light) {
+      document.documentElement.classList.toggle('theme-light', light);
+      try {
+        localStorage.setItem(THEME_STORAGE_KEY, light ? 'light' : 'dark');
+      } catch (e) {}
+
+      themeBtn.setAttribute('aria-pressed', String(light));
+      themeBtn.setAttribute(
+        'aria-label',
+        light ? 'Activar modo oscuro' : 'Activar modo claro'
+      );
+      themeBtn.textContent = light ? '☀' : '☽';
+      metaThemeColor.setAttribute('content', light ? '#f0f4fa' : '#0c0c10');
+    };
+
+    themeBtn.addEventListener('click', function() {
+      setTheme(!document.documentElement.classList.contains('theme-light'));
+    });
+
+    menuToggle.before(themeBtn);
+    setTheme(document.documentElement.classList.contains('theme-light'));
+  }
+
   // Active navigation link
   const navLinks = document.querySelectorAll('nav a');
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-  const header = document.querySelector('header');
-  const menuToggle = document.querySelector('.header-menu-toggle');
   const siteNav = document.querySelector('.site-nav');
 
   navLinks.forEach(link => {
