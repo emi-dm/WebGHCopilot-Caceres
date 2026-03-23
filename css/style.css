@@ -1278,7 +1278,30 @@ body.mobile-nav .event-image {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
+}
+
+.hero-event-date {
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto 14px;
+  padding: 10px 20px;
+  border-radius: var(--r-md);
+  font-family: var(--font-mono);
+  font-size: clamp(0.95rem, 2.4vw, 1.125rem);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent-muted) 85%, transparent), color-mix(in srgb, var(--blue-muted) 85%, transparent));
+  border: 1px solid color-mix(in srgb, var(--accent) 40%, var(--border-default));
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--accent) 12%, transparent),
+    0 8px 28px color-mix(in srgb, var(--accent) 18%, transparent);
+}
+
+.hero-event-date time {
+  font-variant-numeric: tabular-nums;
 }
 
 .typing-line {
