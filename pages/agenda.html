@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
   <script src="../js/theme-init.js"></script>
   <title>GitHub Copilot Developer Days - Agenda</title>
   <link rel="stylesheet" href="../css/style.css">
@@ -39,6 +40,83 @@
     <section>
       <h2>[ AGENDA ]</h2>
       <p>Un programa intenso y práctico diseñado para llevarte del concepto a la ejecución en pocas horas.</p>
+      <aside
+        class="official-devdays-highlight"
+        aria-labelledby="official-devdays-title-agenda"
+      >
+        <p id="official-devdays-title-agenda" class="official-devdays-kicker">★ Destacado · sigue aprendiendo después</p>
+        <p class="official-devdays-text">
+          Más allá de esta agenda en Cáceres, la web oficial concentra <strong>talleres, laboratorios y rutas por lenguaje/IDE</strong> con contenido muy útil para seguir profundizando.
+        </p>
+        <a
+          class="official-devdays-link"
+          href="https://copilot-dev-days.github.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Explorar copilot-dev-days.github.io →</a>
+      </aside>
+    </section>
+
+    <section class="event-timeline-section" aria-labelledby="agenda-timeline-heading">
+      <h2 id="agenda-timeline-heading">[ CRONOGRAMA DEL DÍA ]</h2>
+      <p class="timeline-intro">
+        Jornada presencial de
+        <time datetime="2026-04-17T17:00">17:00</time> a
+        <time datetime="2026-04-17T20:30">20:30</time> (hora local).
+      </p>
+      <ol class="event-timeline">
+        <li class="timeline-item">
+          <span class="timeline-time">
+            <time datetime="2026-04-17T17:00">17:00</time> – <time datetime="2026-04-17T17:45">17:45</time>
+          </span>
+          <div class="timeline-body">
+            <span class="timeline-title">
+              <a href="session-01.html">Sesión 01</a> — GitHub Copilot: tu compañero de IA para cada flujo de trabajo
+            </span>
+            <span class="timeline-meta">Emilio Delgado · Kiko · ~45 min</span>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-time">
+            <time datetime="2026-04-17T17:45">17:45</time> – <time datetime="2026-04-17T18:30">18:30</time>
+          </span>
+          <div class="timeline-body">
+            <span class="timeline-title">
+              <a href="community-session.html">Sesión 02</a> — CODE WITNESS · Self-Healing Codebases
+            </span>
+            <span class="timeline-meta">SonarQube + MCP · ~45 min</span>
+          </div>
+        </li>
+        <li class="timeline-item timeline-item--break">
+          <span class="timeline-time">
+            <time datetime="2026-04-17T18:30">18:30</time> – <time datetime="2026-04-17T18:45">18:45</time>
+          </span>
+          <div class="timeline-body">
+            <span class="timeline-title">Pausa</span>
+            <span class="timeline-meta">Descanso corto</span>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-time">
+            <time datetime="2026-04-17T18:45">18:45</time> – <time datetime="2026-04-17T19:45">19:45</time>
+          </span>
+          <div class="timeline-body">
+            <span class="timeline-title">
+              <a href="session-03.html">Sesión 03</a> — Taller práctico (Python, TypeScript, Ruby)
+            </span>
+            <span class="timeline-meta">Python · TS · Ruby · 60 min</span>
+          </div>
+        </li>
+        <li class="timeline-item timeline-item--end">
+          <span class="timeline-time">
+            <time datetime="2026-04-17T19:45">19:45</time> – <time datetime="2026-04-17T20:30">20:30</time>
+          </span>
+          <div class="timeline-body">
+            <span class="timeline-title">Cierre y networking</span>
+            <span class="timeline-meta">Preguntas, contacto y despedida</span>
+          </div>
+        </li>
+      </ol>
     </section>
 
     <section>
@@ -46,10 +124,11 @@
       <div class="session">
         <div class="session-title">GitHub Copilot: Tu compañero de IA para cada flujo de trabajo</div>
         <div class="session-time">⏱ Duración: 30–45 min</div>
-        <div class="session-type">Sesión · Presentación General</div>
+        <div class="session-type">Sesión · Presentación general · Emilio Delgado y Francisco Hermoso (Kiko)</div>
         <div class="session-desc">
           <p>
-            Presentación general de GitHub Copilot. Descubre qué es, cómo funciona y por qué es el 
+            Presentación general de GitHub Copilot, impartida por <strong>Emilio Delgado</strong> y
+            <strong>Francisco Hermoso (Kiko)</strong>. Descubre qué es, cómo funciona y por qué es el
             compañero perfecto para tu flujo de trabajo de desarrollo. Aprenderás:
           </p>
           <ul style="margin-top: 10px;">
@@ -96,25 +175,33 @@
     <section>
       <h2>[ SESIÓN 03 ]</h2>
       <div class="session">
-        <div class="session-title">Taller Práctico con GitHub Copilot</div>
+        <div class="session-title">Taller práctico con GitHub Copilot</div>
         <div class="session-time">⏱ Duración: 60 min</div>
-        <div class="session-type">Taller · Ejercicios Prácticos y Guiados</div>
+        <div class="session-type">Taller · Tres partes prácticas (Python · TypeScript · Ruby)</div>
         <div class="session-desc">
           <p>
-            Es hora de ensuciarse las manos. En este taller práctico, trabajarás en ejercicios reales 
-            con GitHub Copilot. Cubriremos:
+            Sesión 100 % práctica: <strong>tres bloques de ~20 minutos</strong> (Python, TypeScript, Ruby), cada
+            uno con su facilitador. El objetivo no es recorrer teoría, sino <strong>escribir y probar Copilot en
+            vivo</strong> sobre ejemplos preparados: completado de funciones, chat sobre fragmentos, tests y
+            refactors acotados.
           </p>
           <ul style="margin-top: 10px;">
-            <li>Ejercicios prácticos progresivos (principiante a avanzado)</li>
-            <li>Agent Mode en acción</li>
-            <li>Plan Mode para resolución de problemas complejos</li>
-            <li>MCP Servers para integrar datos externos</li>
-            <li>Flujos de trabajo agenticos</li>
-            <li>Debugging y optimización con Copilot</li>
+            <li>
+              <strong>Python</strong> — Emilio Delgado: utilidades o servicio pequeño; generación de código,
+              tests y uso de Copilot Chat para refinar comportamiento.
+            </li>
+            <li>
+              <strong>TypeScript</strong> — Francisco Hermoso: tipos, módulos y flujo async; alinear sugerencias
+              con convenciones del proyecto y tooling TS.
+            </li>
+            <li>
+              <strong>Ruby</strong> — Dani: estilo idiomático, bloques y specs; Copilot integrado en el flujo de
+              edición habitual en Ruby.
+            </li>
           </ul>
           <p style="margin-top: 15px;">
-            Saldrás con código funcional en tu portátil y conocimiento aplicable directamente a tus 
-            proyectos.
+            Verás cómo cambian los prompts y los atajos útiles según el lenguaje, para llevarte patrones que
+            puedas aplicar también fuera de estos tres stacks. Detalle ampliado en la página de la sesión 03.
           </p>
           <p style="margin-top: 10px; color: var(--link-color);">
             <strong>&gt;&gt; <a href="session-03.html">[Ver página de la sesión 03]</a></strong>

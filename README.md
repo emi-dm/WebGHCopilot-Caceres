@@ -39,6 +39,7 @@ En este evento aprenderás a:
 ## 🗓️ Agenda
 
 ### 1) GitHub Copilot: Tu compañero de IA para cada flujo de trabajo (30–45 min)
+- **Facilitadores:** Emilio Delgado y Francisco Hermoso (Kiko)
 - Sesión de introducción a Copilot
 - Cómo sacar partido en tu IDE, lenguaje y flujo de trabajo favorito
 
@@ -48,15 +49,19 @@ En este evento aprenderás a:
 - Demo práctica: agente que detecta problemas y propone/refactoriza soluciones
 
 ### 3) Taller práctico (60 min)
-- Ejercicios guiados usando Copilot en proyectos reales
-- Pares de programación con Copilot como copiloto
-- Preguntas y respuestas + resolución de dudas en vivo
+- **Tres partes prácticas** con GitHub Copilot, una por lenguaje y facilitador:
+  - **Python** — Emilio Delgado
+  - **TypeScript** — Francisco Hermoso
+  - **Ruby** — Dani
+- Rotación por stacks con el mismo foco: practicar Copilot en código real
 
 ---
 
 ## 🎤 Ponentes y organizadores
-- **Emilio Delgado** — Ponente del track **CODE WITNESS** (Self‑Healing Codebases · SonarQube + MCP)
-- **Organizadores locales** — Logística, demos y facilitación del taller
+- **Emilio Delgado** — **Sesión 1** (introducción, con Kiko) · **CODE WITNESS** (sesión 2) · **Python** (sesión 3)
+- **Francisco Hermoso (Kiko)** — **Sesión 1** (introducción, con Emilio) · **TypeScript** (sesión 3)
+- **Dani** — Parte práctica **Ruby** (sesión 3)
+- **Organizadores locales** — Logística, demos y coordinación
 
 📣 ¿Quieres dar una charla breve o una demo relámpago? Contacta a través de los canales del evento.
 
