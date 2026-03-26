@@ -62,6 +62,8 @@ En este evento aprenderás a:
 - **Francisco Hermoso (Kiko)** — **Sesión 1** (introducción, con Emilio) · **TypeScript** (sesión 3)
 - **Dani** — Parte práctica **Ruby** (sesión 3)
 - **Organizadores locales** — Logística, demos y coordinación
+- **[Cáceres Tech](https://cacerestech.com/)** — Comunidad tecnológica local
+- **[INTIA](https://intia.unex.es/)** — Instituto Universitario de Tecnologías Informáticas Aplicadas (UNEX)
 
 📣 ¿Quieres dar una charla breve o una demo relámpago? Contacta a través de los canales del evento.
 
@@ -142,6 +144,8 @@ Si asistes al evento descubrirás:
 - [Registro oficial del evento](https://circularfab.es/intranet/detalle_evento/index.php?t=2738)
 - [Documentación de GitHub Copilot](https://docs.github.com/copilot)
 - [CircularFab (organizador)](https://circularfab.es/)
+- [Cáceres Tech](https://cacerestech.com/)
+- [INTIA (UNEX)](https://intia.unex.es/)
 
 ## ⚡ Rendimiento
 
