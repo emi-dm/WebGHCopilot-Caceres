@@ -52,7 +52,7 @@ En este evento aprenderás a:
 - **Tres partes prácticas** con GitHub Copilot, una por lenguaje y facilitador:
   - **Python** — Emilio Delgado
   - **TypeScript** — Francisco Hermoso
-  - **Ruby** — Dani
+  - **Go** — Juan Manuel Ruiz (Juanma)
 - Rotación por stacks con el mismo foco: practicar Copilot en código real
 
 ---
@@ -60,7 +60,7 @@ En este evento aprenderás a:
 ## 🎤 Ponentes y organizadores
 - **Emilio Delgado** — **Sesión 1** (introducción, con Kiko) · **CODE WITNESS** (sesión 2) · **Python** (sesión 3)
 - **Francisco Hermoso (Kiko)** — **Sesión 1** (introducción, con Emilio) · **TypeScript** (sesión 3)
-- **Dani** — Parte práctica **Ruby** (sesión 3)
+- **Juan Manuel Ruiz (Juanma)** — Parte práctica **Go** (sesión 3)
 - **Organizadores locales** — Logística, demos y coordinación
 - **[Cáceres Tech](https://cacerestech.com/)** — Comunidad tecnológica local
 - **[INTIA](https://intia.unex.es/)** — Instituto Universitario de Tecnologías Informáticas Aplicadas (UNEX)

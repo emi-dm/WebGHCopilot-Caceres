@@ -1200,18 +1200,58 @@ html.theme-light a.official-devdays-link {
   }
 }
 
+/* Franja de sesiones / rol: chips independientes (flex-wrap) */
 .speaker-role {
-  display: inline-block;
-  font-family: var(--font-mono);
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.08em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 8px;
+  align-items: center;
+  margin: 0 0 12px;
+  max-width: 100%;
+}
+
+.speaker-role-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--accent);
-  background: var(--accent-muted);
+  line-height: 1.25;
+  color: color-mix(in srgb, var(--accent) 88%, var(--text));
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--accent) 16%, transparent) 0%,
+    color-mix(in srgb, var(--blue) 8%, transparent) 100%
+  );
+  border: 1px solid color-mix(in srgb, var(--accent) 28%, var(--border-default));
   border-radius: 999px;
-  padding: 4px 10px;
-  margin-bottom: 10px;
+  padding: 6px 12px;
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, #fff 14%, transparent),
+    0 1px 2px rgba(0, 0, 0, 0.12);
+  transition:
+    border-color 0.2s var(--ease),
+    box-shadow 0.2s var(--ease),
+    transform 0.2s var(--ease);
+}
+
+html.theme-light .speaker-role-chip {
+  color: color-mix(in srgb, var(--accent) 75%, var(--text));
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, #fff 55%, transparent),
+    0 1px 2px rgba(31, 35, 40, 0.06);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .speaker-card:hover .speaker-role-chip {
+    border-color: color-mix(in srgb, var(--blue) 35%, var(--border-default));
+    box-shadow:
+      inset 0 1px 0 color-mix(in srgb, #fff 16%, transparent),
+      0 2px 8px color-mix(in srgb, var(--accent) 12%, transparent);
+  }
 }
 
 .speaker-name {
@@ -1246,6 +1286,23 @@ html.theme-light a.official-devdays-link {
   font-weight: 500;
   overflow-wrap: anywhere;
   word-break: break-word;
+}
+
+/* Badges de lenguajes (Shields.io) */
+.lang-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 12px;
+  align-items: center;
+  margin: 14px 0 0;
+  padding: 0;
+}
+
+.lang-badges img {
+  height: 28px;
+  width: auto;
+  display: block;
+  vertical-align: middle;
 }
 
 footer {
