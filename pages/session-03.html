@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="../favicon.ico" type="image/x-icon">
   <script src="../js/theme-init.js"></script>
-  <title>Sesión 03 - Taller práctico (Python, TypeScript, Go)</title>
+  <title>Sesión 03 — Hands-on (Python, Go) y workshop TypeScript (en paralelo)</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -39,19 +39,25 @@
   <main>
     <section>
       <h2>[ SESIÓN 03 ]</h2>
-      <h3>Taller práctico con GitHub Copilot</h3>
-      <p><strong>Duración:</strong> 60 min</p>
+      <h3>Dos hands-on y un workshop de TypeScript en paralelo</h3>
       <p>
-        <strong>Formato:</strong> tres bloques seguidos (~20 min cada uno), con el mismo hilo conductor:
-        <strong>Copilot en código real</strong>, en tu IDE, con un facilitador por lenguaje. No es una charla
-        magistral: el tiempo es para escribir, probar sugerencias, corregir y preguntar en vivo.
+        <strong>Franja en agenda:</strong> misma ventana que en el cronograma general
+        (<time datetime="2026-04-17T18:40">18:40</time>–<time datetime="2026-04-17T19:40">19:40</time>); el evento
+        <strong>sigue terminando a la misma hora</strong> que antes.
       </p>
       <p>
-        Verás cómo cambian los atajos útiles y el estilo de prompts según el ecosistema (tipado, tests,
-        convenciones del lenguaje), para que puedas trasladar la idea a tu stack habitual aunque no sea uno de
-        los tres del taller.
+        <strong>Formato:</strong> las actividades <strong>no van en serie</strong>: corren
+        <strong>en paralelo (asíncronas entre sí)</strong>. En un espacio, <strong>hands-on de Python (30 min)</strong>
+        y seguidamente <strong>hands-on de Go (30 min)</strong> — <strong>PC opcional</strong>. En paralelo, en
+        otro espacio, el <strong>workshop de TypeScript (60 min)</strong> con Kiko — <strong>PC necesaria</strong>.
+        Elige el track que quieras seguir; no es posible estar a la vez en los dos hilos.
       </p>
-      <div class="lang-badges" role="group" aria-label="Lenguajes del taller">
+      <p>
+        Las hands-on priorizan seguir el hilo con código en pantalla (y practicar si llevas portátil); el workshop
+        de TS es una hora completa de práctica en el IDE con Copilot (tipado, módulos, sugerencias alineadas con el
+        proyecto).
+      </p>
+      <div class="lang-badges" role="group" aria-label="Tecnologías de la sesión 03">
         <img
           src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"
           alt="Python"
@@ -74,43 +80,45 @@
     </section>
 
     <section>
-      <h2>[ TRES PARTES PRÁCTICAS ]</h2>
+      <h2>[ PROGRAMA POR TRACK ]</h2>
+      <p class="session-desc" style="margin-top: 0;">
+        Duraciones reales de contenido: <strong>30 min + 30 min</strong> en el track Python/Go;
+        <strong>60 min</strong> en el track TypeScript. En reloj de pared encajan en la misma hora gracias al
+        paralelismo.
+      </p>
       <div class="session" style="margin-top: 12px;">
-        <div class="session-title">Parte 1 — Python</div>
-        <div class="session-speaker">Emilio Delgado</div>
+        <div class="session-title">Track hands-on — Python</div>
+        <div class="session-time">⏱ 30 min · 💻 PC opcional</div>
+        <div class="session-speaker">Emilio Delgado (Emi)</div>
         <p>
-          Enfoque en flujos típicos de Python: generación y refinamiento de funciones, manejo de errores y tests,
-          y uso de Copilot Chat para aclarar comportamiento o proponer refactors sobre fragmentos concretos.
-        </p>
-        <p>
-          Se trabajará sobre un ejemplo acotado (por ejemplo utilidades o un mini servicio) para que puedas
-          seguir el ritmo y repetir el patrón en tus propios proyectos.
+          Hands-on sobre flujos típicos de Python con Copilot: generación y refinamiento de funciones, manejo de
+          errores y tests, y Copilot Chat sobre fragmentos concretos. Puedes seguir solo con atención o apoyarte en
+          tu portátil si lo traes.
         </p>
       </div>
       <div class="session" style="margin-top: 12px;">
-        <div class="session-title">Parte 2 — TypeScript</div>
-        <div class="session-speaker">Francisco Hermoso</div>
-        <p>
-          Práctica en TypeScript con atención al <strong>tipado</strong>, autocompletado y sugerencias que
-          respetan interfaces y tipos: completar módulos, manejar <code>async</code>/<code>await</code> y
-          alinear Copilot con las reglas del proyecto (ESLint, convenciones de nombres).
-        </p>
-        <p>
-          Ideal si te mueves en front o Node: verás cómo encajar Copilot en un flujo moderno con herramientas
-          habituales en el ecosistema TS.
-        </p>
-      </div>
-      <div class="session" style="margin-top: 12px;">
-        <div class="session-title">Parte 3 — Go</div>
+        <div class="session-title">Track hands-on — Go</div>
+        <div class="session-time">⏱ 30 min · 💻 PC opcional</div>
         <div class="session-speaker">Juan Manuel Ruiz (Juanma)</div>
         <p>
-          Bloque centrado en <strong>Go</strong>: paquetes y módulos, interfaces y manejo de errores idiomático,
-          concurrencia ligera cuando toque, más integración de Copilot en tareas como completar tests,
-          refactorizar funciones o explorar la stdlib sin salir del editor.
+          Hands-on en <strong>Go</strong>: paquetes y módulos, interfaces y errores idiomáticos, tests y cómo encaja
+          Copilot en el flujo habitual. En este track sigue a la sesión de Python dentro de la misma franja.
+          <strong>Repositorio de código:</strong>
+          <a href="https://github.com/neovasili/2026-copilot-dev-day" target="_blank" rel="noopener noreferrer">https://github.com/neovasili/2026-copilot-dev-day</a>
+        </p>
+      </div>
+      <div class="session" style="margin-top: 12px;">
+        <div class="session-title">Track workshop — TypeScript</div>
+        <div class="session-time">⏱ 60 min · 💻 PC necesaria</div>
+        <div class="session-speaker">Francisco Hermoso (Kiko)</div>
+        <p>
+          Una hora de práctica en TypeScript: <strong>tipado</strong>, autocompletado y sugerencias que respetan
+          interfaces y tipos; módulos, <code>async</code>/<code>await</code> y Copilot alineado con las reglas del
+          proyecto. Requiere <strong>GitHub Copilot activo</strong> en tu IDE.
         </p>
         <p>
-          Se prioriza código claro y alineado con las convenciones del lenguaje, con espacio para dudas sobre
-          tooling (<code>go fmt</code>, tests, módulos) y buenas prácticas en el ecosistema.
+          <strong>Guía del workshop:</strong>
+          <a href="https://copilot-dev-days.github.io/agent-lab-typescript/step.html?step=guide" target="_blank" rel="noopener noreferrer">https://copilot-dev-days.github.io/agent-lab-typescript/step.html?step=guide</a>
         </p>
       </div>
     </section>
@@ -118,30 +126,36 @@
     <section>
       <h2>[ QUÉ ESPERAR ]</h2>
       <ul>
-        <li>Demos breves y <strong>manos al teclado</strong>: cada facilitador guía un ejercicio y resuelve dudas al momento.</li>
-        <li>Mismo Copilot, <strong>tres perspectivas</strong>: compararás qué pides al asistente en Python, TS y Go.</li>
-        <li>Libreta de ideas: patrones de prompts, atajos del IDE y “qué funcionó” para llevarte a casa.</li>
+        <li>Dos hands-on de <strong>30 minutos</strong> (Python y Go), en secuencia en su track, con <strong>PC opcional</strong>.</li>
+        <li>Un workshop de TS de <strong>una hora</strong>, <strong>en paralelo</strong>, con <strong>PC obligatoria</strong>.</li>
+        <li>Misma hora de cierre del evento; dentro de la sesión 03 eliges un track u otro.</li>
       </ul>
     </section>
 
     <section>
       <h2>[ PREPARACIÓN ]</h2>
       <p>
-        Trae tu portátil con <strong>GitHub Copilot activo</strong> y un IDE compatible (por ejemplo VS Code o
-        JetBrains). Si un lenguaje no lo usas a diario, no pasa nada: el material estará preparado para seguirlo
-        paso a paso; lo importante es ver el flujo con Copilot encendido.
+        Si eliges el <strong>track Python + Go</strong>, el portátil es opcional; si lo llevas, tendrás Copilot a
+        mano para practicar cuando toque. Para la parte de Go, <strong>Repositorio de código:</strong>
+        <a href="https://github.com/neovasili/2026-copilot-dev-day" target="_blank" rel="noopener noreferrer">https://github.com/neovasili/2026-copilot-dev-day</a>
+        (puedes clonarlo de antemano).
       </p>
       <p>
-        Para más detalle sobre requisitos e inscripción, consulta <a href="info.html">información del evento</a>.
+        Si eliges el <strong>workshop de TypeScript</strong>, necesitas <strong>portátil</strong> con Copilot
+        activo y un IDE compatible (por ejemplo VS Code o JetBrains) durante toda la hora. Puedes repasar la
+        <strong>guía del workshop</strong> antes:
+        <a href="https://copilot-dev-days.github.io/agent-lab-typescript/step.html?step=guide" target="_blank" rel="noopener noreferrer">https://copilot-dev-days.github.io/agent-lab-typescript/step.html?step=guide</a>
+      </p>
+      <p>
+        Más detalle sobre requisitos e inscripción en <a href="info.html">información del evento</a>.
       </p>
     </section>
 
     <section>
       <h2>[ OBJETIVO ]</h2>
       <p>
-        Salir con <strong>tres referencias prácticas</strong> (Python, TypeScript, Go) de cómo encajar Copilot
-        en tareas del día a día — escribir menos repetición, mantener estilo del proyecto y usar el chat como
-        apoyo sin perder el control del código.
+        Según el track: profundizar en <strong>Python y Go</strong> con Copilot en formato hands-on breve, o
+        dedicar la hora completa a <strong>TypeScript</strong> con Kiko en el workshop.
       </p>
       <p><a href="agenda.html">[&gt;] Volver a agenda</a></p>
     </section>
